@@ -32,7 +32,7 @@ export class LearningAboutPageComponent implements AfterViewInit, OnDestroy, OnI
 
   onResize = (): void => {
     // Automatically expand the video to fit the page up to 1200px x 720px
-    this.videoWidth = Math.min(this.demoYouTubePlayer.nativeElement.clientWidth, 1200);
+    this.videoWidth = Math.min(this.demoYouTubePlayer.nativeElement.clientWidth, 800);
     this.videoHeight = this.videoWidth * 0.6;
     this._changeDetectorRef.detectChanges();
   }
